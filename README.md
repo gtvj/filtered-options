@@ -1,7 +1,11 @@
-# Recommended links JavaScript application
+# Filtered options application
 
 ## Purpose
 
+To provide jQuery plugin that links a user's selection from a radio
+button to the availability of a `<option>` elements within a `<select>`.
+For example, if a user selects 'postal' as a delivery type, they will be
+presented with options that are appropriate to a postal delivery only.
 
 ## Development machine setup
 
