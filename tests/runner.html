@@ -8,19 +8,13 @@
 </head>
 <body>
 <div id="qunit"></div>
-<div id="qunit-fixture">
-    <ul>
-        <li>[On page load] - disable the skill_name dropdown if no skill_type is present (if a skill_name is present it should not be cleared)</li>
-        <li>[In response to user action] - update skill_name to include only those options that relate to the choice made</li>
-        <li>[In response to user action] - Changing skill_type after choosing a skill_name should clear their selection</li>
-        <li></li>
-    </ul>
+<div id="qunit-fxture">
     <form action="#">
         <div>
-            <input type="radio" name="skill_type" id="front_end"><label for="front_end">Front end skills</label>
+            <input class="skill_type" type="radio" name="skill_type" id="front_end"><label for="front_end">Front end skills</label>
         </div>
         <div>
-            <input type="radio" name="skill_type" id="back_end"><label for="back_end">Back end skills</label>
+            <input class="skill_type"  type="radio" name="skill_type" id="back_end"><label for="back_end">Back end skills</label>
         </div>
         <div>
             <label for="skill_name">Skill name</label>
