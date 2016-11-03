@@ -1,3 +1,3 @@
-QUnit.test( "hello test", function( assert ) {
-    assert.ok( 1 == "1", "Passed!" );
+QUnit.test( "jQuery is available", function( assert ) {
+    assert.ok( typeof $ === "function", "$ is available" );
 });
