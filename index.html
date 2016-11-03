@@ -5,6 +5,37 @@
     <title>Filtered options</title>
 </head>
 <body>
-
+<h1>Task</h1>
+<p>Write JavaScript/jQuery that meets these requirements</p>
+<ul>
+    <li>[On page load] - disable the skill_name dropdown if no skill_type is present (if a skill_name is present it should not be cleared)</li>
+    <li>[In response to user action] - update skill_name to include only those options that relate to the choice made</li>
+    <li>[In response to user action] - Changing skill_type after choosing a skill_name should clear their selection</li>
+    <li></li>
+</ul>
+<form action="#">
+    <div>
+        <input type="radio" name="skill_type" id="front_end"><label for="front_end">Front end skills</label>
+    </div>
+    <div>
+        <input type="radio" name="skill_type" id="back_end"><label for="back_end">Back end skills</label>
+    </div>
+    <div>
+        <label for="skill_name">Skill name</label>
+        <select name="skill_name" id="skill_name">
+            <option value="">Please select... </option>
+            <option value="programming" data-front-end="true" data-back-end="true">Programming</option>
+            <option value="databases" data-front-end="false" data-back-end="true">Databases</option>
+            <option value="html" data-front-end="true" data-back-end="false">HTML</option>
+            <option value="css" data-front-end="true" data-back-end="false">CSS</option>
+            <option value="server_configuration" data-front-end="false" data-back-end="true">Server configuration</option>
+            <option value="agile_approaches" data-front-end="true" data-back-end="true">Agile approaches</option>
+            <option value="jquery" data-front-end="true" data-back-end="false">jQuery</option>
+            <option value="node_js" data-front-end="false" data-back-end="true">NodeJS</option>
+        </select>
+    </div>
+</form>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="src/app.js"></script>
 </body>
 </html>
